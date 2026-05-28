@@ -11,5 +11,5 @@ export const env = {
   port: toNumber(process.env.PORT, 8080),
   databaseUrl: process.env.DATABASE || process.env.MONGO_URI || '',
   nodeEnv: process.env.NODE_ENV || 'development',
-  dockerHubUrl: process.env.DOCKERHUB_URL || 'https://hub.docker.com/r/<dockerhub-user>/proyecto-final-adopciones'
+  dockerHubUrl: process.env.DOCKERHUB_URL || 'https://hub.docker.com/r/andelanati/proyecto-final-adopciones'
 };

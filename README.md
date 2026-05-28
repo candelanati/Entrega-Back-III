@@ -54,7 +54,7 @@ Crear un archivo `.env` a partir de `.env.example`:
 ```env
 PORT=8080
 DATABASE=mongodb+srv://<user>:<password>@<cluster>/<database>?retryWrites=true&w=majority
-DOCKERHUB_URL=https://hub.docker.com/r/<dockerhub-user>/proyecto-final-adopciones
+DOCKERHUB_URL=https://hub.docker.com/r/andelanati/proyecto-final-adopciones
 ```
 
 ## Instalacion
@@ -103,6 +103,8 @@ Tambien validan respuestas de error para adopcion inexistente, IDs invalidos, us
 
 Las pruebas funcionales aislan las dependencias externas y de base de datos mediante dobles de prueba como mocks, stubs o fakes. Por ese motivo, `npm test` no requiere una conexion real a MongoDB Atlas para ejecutarse.
 
+Resultado confirmado: `9 passing`.
+
 ## Swagger
 
 Con la aplicacion corriendo, la documentacion Swagger queda disponible en:
@@ -126,31 +128,33 @@ La imagen Docker del proyecto utiliza como base `node:20-alpine` y expone el pue
 Construir la imagen:
 
 ```bash
-docker build -t <dockerhub-user>/proyecto-final-adopciones:1.0.0 .
+docker build -t andelanati/proyecto-final-adopciones:1.0.0 .
 ```
 
 Ejecutar el contenedor:
 
 ```bash
-docker run --env-file .env -p 8080:8080 <dockerhub-user>/proyecto-final-adopciones:1.0.0
+docker run --env-file .env -p 8080:8080 andelanati/proyecto-final-adopciones:1.0.0
 ```
 
 Publicar en DockerHub:
 
 ```bash
-docker push <dockerhub-user>/proyecto-final-adopciones:1.0.0
+docker push andelanati/proyecto-final-adopciones:1.0.0
 ```
 
-Marcador de posicion para la URL publica de DockerHub:
+Build, ejecucion y publicacion confirmados.
+
+URL publica de DockerHub:
 
 ```txt
-https://hub.docker.com/r/<dockerhub-user>/proyecto-final-adopciones
+https://hub.docker.com/r/andelanati/proyecto-final-adopciones
 ```
 
 ## Notas de entrega
 
 - URL del repositorio: `<repository-url>`
-- URL publica de DockerHub: `https://hub.docker.com/r/<dockerhub-user>/proyecto-final-adopciones`
+- URL publica de DockerHub: `https://hub.docker.com/r/andelanati/proyecto-final-adopciones`
 - URL de Swagger: `http://localhost:8080/api/docs`
 - Puerto por defecto: `8080`
 
