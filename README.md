@@ -153,7 +153,7 @@ https://hub.docker.com/r/andelanati/proyecto-final-adopciones
 
 ## Notas de entrega
 
-- URL del repositorio: `<repository-url>`
+- URL del repositorio: `https://github.com/candelanati/Entrega-Back-III.git`
 - URL publica de DockerHub: `https://hub.docker.com/r/andelanati/proyecto-final-adopciones`
 - URL de Swagger: `http://localhost:8080/api/docs`
 - Puerto por defecto: `8080`

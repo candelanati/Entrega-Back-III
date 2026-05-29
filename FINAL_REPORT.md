@@ -323,7 +323,7 @@ Endpoints de adopciones:
 
 ## 6. README
 
-El archivo `README.md` queda preparado como guia profesional del proyecto e incluye:
+El archivo `README.md` sirve como guia profesional del proyecto e incluye:
 
 - Descripcion del proyecto.
 - Tecnologias usadas.
